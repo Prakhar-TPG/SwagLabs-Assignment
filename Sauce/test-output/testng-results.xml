@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-04T06:30:19Z" name="Default suite" finished-at="2022-02-04T06:30:52Z" duration-ms="33134">
+    <groups>
+    </groups>
+    <test started-at="2022-02-04T06:30:19Z" name="Default test" finished-at="2022-02-04T06:30:52Z" duration-ms="33134">
+      <class name="CartTest.CartProductTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:19Z" name="openBrowser" finished-at="2022-02-04T06:30:22Z" duration-ms="2426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="function()[pri:1, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:22Z" name="function" finished-at="2022-02-04T06:30:22Z" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- function -->
+        <test-method signature="Case1_verify_site()[pri:2, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:22Z" name="Case1_verify_site" finished-at="2022-02-04T06:30:24Z" duration-ms="2025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case1_verify_site -->
+        <test-method signature="Case2_login()[pri:3, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:24Z" name="Case2_login" finished-at="2022-02-04T06:30:33Z" duration-ms="9255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case2_login -->
+        <test-method signature="Case3_Add_item()[pri:4, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:33Z" name="Case3_Add_item" finished-at="2022-02-04T06:30:36Z" duration-ms="3102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case3_Add_item -->
+        <test-method signature="Case4_Cart_verify_item()[pri:5, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:36Z" name="Case4_Cart_verify_item" finished-at="2022-02-04T06:30:39Z" duration-ms="3132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case4_Cart_verify_item -->
+        <test-method signature="Case5_fill_form()[pri:6, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:39Z" name="Case5_fill_form" finished-at="2022-02-04T06:30:48Z" duration-ms="8283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case5_fill_form -->
+        <test-method signature="Case6_finish()[pri:7, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:48Z" name="Case6_finish" finished-at="2022-02-04T06:30:50Z" duration-ms="2048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case6_finish -->
+        <test-method signature="Case7_Homebtn()[pri:8, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:50Z" name="Case7_Homebtn" finished-at="2022-02-04T06:30:52Z" duration-ms="2059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case7_Homebtn -->
+        <test-method signature="Case8_removed()[pri:9, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:52Z" name="Case8_removed" finished-at="2022-02-04T06:30:52Z" duration-ms="49" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No Product] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No Product] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at Functions.FinalPagefunc.checkitem(FinalPagefunc.java:20)
+at CartTest.CartProductTest.Case8_removed(CartProductTest.java:85)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Case8_removed -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:CartTest.CartProductTest@abf688e]" started-at="2022-02-04T06:30:52Z" name="closeBrowser" finished-at="2022-02-04T06:30:52Z" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- CartTest.CartProductTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
