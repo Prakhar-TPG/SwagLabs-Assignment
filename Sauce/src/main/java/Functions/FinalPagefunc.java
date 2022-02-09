@@ -15,9 +15,8 @@ public class FinalPagefunc extends CoreActions {
 	}
 	public void checkitem() {
 	{
-			Boolean Present = bot.findElements(ProductPage.checkitem).size() > 0;
-			System.out.println(Present);
-			Assert.assertEquals(Present,"No Product");
+			bot.findElements(FinalPage.checkitem).isEmpty();
+			System.out.println("No Product Found");
 		}
 
     }
