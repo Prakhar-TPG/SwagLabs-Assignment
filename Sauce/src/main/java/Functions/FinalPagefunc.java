@@ -1,8 +1,6 @@
 package Functions;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-
 import All_Pages.ProductPage;
 import Basic.CoreActions;
 
