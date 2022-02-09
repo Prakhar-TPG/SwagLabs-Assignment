@@ -16,7 +16,7 @@ public class FinalPagefunc extends CoreActions {
 	public void checkitem() {
 	{
 			bot.findElements(FinalPage.checkitem).isEmpty();
-			System.out.println("No Product Found");
+			System.out.println("Cart is empty");
 		}
 
     }
