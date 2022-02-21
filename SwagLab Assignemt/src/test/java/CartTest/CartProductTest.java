@@ -15,7 +15,7 @@ public class CartProductTest extends CoreTestIntegration {
 	CompletePagefunc complete;
 	FinalPagefunc removal;
 	
-	@Test
+    @Test
     @Description("Test to add a product to cart, verify it and proceed to checkout. After checkout, also verify its removal")
     @Severity(SeverityLevel.CRITICAL)
     @Feature("Feature 1")
@@ -24,36 +24,36 @@ public class CartProductTest extends CoreTestIntegration {
 	
     public void test_to_login_add_product_checkout_verify_product_and_removal() throws InterruptedException{  
 		
-		login = new Homepagefunc(bot);
+	login = new Homepagefunc(bot);
     	stepLog("Verifying the correct site is opened");
-		login.verifySite();
+	login.verifySite();
 		
     	stepLog("Filling username and password ");
     	login.enterUsernamesList();  // For username, password and login
     	
-		product = new ProductPagefunc(bot);
+	product = new ProductPagefunc(bot);
     	stepLog("Adding item to Cart");
     	product.clickOnAddToCart();
     	product.clickOnCart();
     	
-		cart = new CartPagefunc(bot);
+	cart = new CartPagefunc(bot);
     	stepLog("Verifying cart product with selected product and price");
     	cart.nameCheck();
     	cart.priceCheck();
     	cart.clickOnCheckOut();
     	
-		checkout = new CheckOutPagefunc(bot);
+	checkout = new CheckOutPagefunc(bot);
     	stepLog("Filling information for checkout");
         checkout.NamePincode();
         checkout.clickOnContinue();
         
-		overview = new Overviewfunc(bot);
+	overview = new Overviewfunc(bot);
     	overview.ClickOnFinish();
 
-		complete = new CompletePagefunc(bot);
+	complete = new CompletePagefunc(bot);
     	complete.ClickOnHome();
     	
-		removal= new FinalPagefunc(bot);
+	removal= new FinalPagefunc(bot);
     	stepLog("Checking item is removed");
     	removal.clickOnCart();
     	removal.checkitem();
