@@ -1,0 +1,11 @@
+{
+"Username":"standard_user",
+"Password":"secret_sauce",
+"PageTitle":"Swag Labs",
+"LoginPageURL":"https://www.saucedemo.com/",
+"InventoryURL":"https://www.saucedemo.com/inventory.html",
+"CartURL":"https://www.saucedemo.com/cart.html",
+"Check_Out_URL_StepOne":"https://www.saucedemo.com/checkout-step-one.html",
+"Check_Out_URL_StepTwo":"https://www.saucedemo.com/checkout-step-two.html",
+"Check_Out_CompleteURL":"https://www.saucedemo.com/checkout-complete.html"
+}
